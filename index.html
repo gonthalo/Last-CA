@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<title>Last Cellular Automata</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				<div width="300px">
+					Tama&ntilde;o del tablero:
+					<input type="number" min="4" max="20" id="numero1" value="20" style="width:30px">
+					 x 
+					<input type="number" min="4" max="40" id="numero2" value="40" style="width:30px">
+					<input type="button" onclick="reset()" value="Reset">
+					<input type="button" onclick="pausa = !pausa" value="Pausa">
+					<input type="button" onclick="mover(); draw();" value="Mover">
+					<input type="button" onclick="crear_vida(); draw();" value="Crear vida">
+				</div>
+			</td>
+			<td>
+				<div style="border:2px solid rgb(5,200,100)" float="left">
+					<canvas id="lienzo" width="1000px" height="610px" >Your browser does not render the HTML 5 canvas tag</canvas>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
